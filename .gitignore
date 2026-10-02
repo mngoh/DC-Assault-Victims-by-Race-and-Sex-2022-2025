@@ -1,0 +1,8 @@
+# unzipped copies of data/raw/DC-*.zip (the zips are tracked) and the all-offense table rebuilt by scripts/flatten_nibrs.py
+data/raw/20*/
+data/interim/
+# Census Reporter downloads, re-fetched by denominators.py; out/population.json is tracked
+out/cache/
+.claude/
+.DS_Store
+__pycache__/

@@ -1,0 +1,158 @@
+{
+  "title": "Assault victims in Washington, DC",
+  "author": "Martin Ngoh",
+  "place": {
+    "name": "Washington, DC",
+    "short": "DC",
+    "census_geoid": "16000US1150000"
+  },
+  "acs_release": "acs2024_5yr",
+  "window": {
+    "start": "2022-01-01",
+    "end": "2025-12-31"
+  },
+  "event": {
+    "noun": "assault",
+    "plural": "assaults",
+    "verb": "assaulted"
+  },
+  "incidents": [
+    {
+      "path": "data/dc_simple_assault.csv",
+      "kind": "simple"
+    },
+    {
+      "path": "data/dc_aggravated_assault.csv",
+      "kind": "aggravated"
+    }
+  ],
+  "kind_labels": {
+    "simple": "Simple assault",
+    "aggravated": "Aggravated assault"
+  },
+  "columns": {
+    "id": "victim_id",
+    "date": "incident_date",
+    "race": "race_group",
+    "sex": "sex",
+    "age": "age",
+    "premise": "premise",
+    "weapon": "weapon",
+    "code": "offense_code"
+  },
+  "race_map": {
+    "B": "Black",
+    "H": "Hispanic",
+    "W": "White",
+    "A": "Asian"
+  },
+  "groups": [
+    "Black",
+    "Hispanic",
+    "White",
+    "Asian"
+  ],
+  "focus": {
+    "group": "Black",
+    "sex": "F",
+    "label": "Black women"
+  },
+  "headline": "Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and at least 9 times the rate of White women. Age, partner violence and non-resident victims do not explain the gap; where assaults happen is not in the data.",
+  "question": "Are Black women in DC assaulted at a higher rate than Hispanic, White and Asian women, and do the plain explanations account for it?",
+  "flags": {
+    "partner": {
+      "column": "partner",
+      "values": [
+        "Y"
+      ],
+      "label": "Intimate partner"
+    },
+    "nonresident": {
+      "column": "resident_status",
+      "values": [
+        "N"
+      ],
+      "label": "Recorded non-resident"
+    }
+  },
+  "weapon_classes": [
+    {
+      "label": "Firearm",
+      "keywords": [
+        "FIREARM",
+        "HANDGUN",
+        "RIFLE",
+        "SHOTGUN"
+      ]
+    },
+    {
+      "label": "Knife or cutting",
+      "keywords": [
+        "KNIFE",
+        "CUTTING"
+      ]
+    },
+    {
+      "label": "Blunt object or vehicle",
+      "keywords": [
+        "BLUNT",
+        "CLUB",
+        "MOTOR VEHICLE"
+      ]
+    },
+    {
+      "label": "Hands, fists, feet",
+      "keywords": [
+        "PERSONAL WEAPON",
+        "ASPHYXIATION",
+        "STRANGULATION"
+      ]
+    }
+  ],
+  "sources": [
+    "FBI National Incident-Based Reporting System (NIBRS) state files for the District of Columbia, 2022 to 2025",
+    "US Census Bureau ACS 2020 to 2024 five-year estimates via Census Reporter"
+  ],
+  "links": {
+    "code": "https://github.com/mngoh/DC-Assault",
+    "home": "https://martinngoh.com"
+  },
+  "extra_caveats": [
+    [
+      "Where assaults happen is not in this data",
+      "The FBI's NIBRS files record no address, ward or police district. So this page cannot test whether location or neighborhood conditions account for the gap, and there is no tract-level model. In the Los Angeles analysis, location was the control that moved the gap most. Even where it can be tested, a gap that shrinks after location has been located, not explained away: neighborhoods are shaped by segregation."
+    ],
+    [
+      "Policing and reporting",
+      "Police data reflects where officers patrol and who calls them. This data cannot separate more policing or more reporting from more assaults."
+    ],
+    [
+      "Hispanic ethnicity is often missing",
+      "NIBRS records ethnicity separately from race, and it is unknown or unspecified for 30.6% of women victims. 28.8% of women recorded as White have unknown ethnicity, and where it is known, 53.8% of them are Hispanic. They are counted as White here. If they were Hispanic, Black women's rate would be 2.22x Hispanic women's instead of 3.22x, and 19.11x White women's instead of 10.21x."
+    ],
+    [
+      "Missing race",
+      "1,059 women victims have unknown race. NIBRS has no location, so where they cluster cannot be mapped. Spread over the four groups like known victims of the same assault type, premises and resident status, the ratios move to 3.18x Hispanic, 10.02x White, 9.88x Asian from 3.22x, 10.21x, 10.13x."
+    ],
+    [
+      "Residents are the denominator",
+      "DC draws many commuters and visitors, and rates divide by residents only. Resident status is blank for 36.3% to 43.9% of women victims depending on group (36.3% Black, 40.9% Hispanic, 43.0% White, 43.9% Asian), so the non-resident test is partial."
+    ],
+    [
+      "Intimate partner is a lower bound",
+      "Partner assaults are identified from the victim-offender relationship, which is unknown or blank for 18.2% of Black, 28.0% of Hispanic, 41.8% of White, 42.6% of Asian women victims. Where it is missing more often, the partner share is understated more, so partner comparisons are least certain against the groups with the most missing."
+    ],
+    [
+      "What is counted",
+      "Aggravated (13A) and simple (13B) assault reported by the Metropolitan Police Department, individual victims of any age. Left out: 5,678 Metro Transit Police victims, whose system extends into Maryland and Virginia; 3,067 assaults on officers; 18,691 intimidation victims (threats with no attack). 57 American Indian or Alaska Native and 33 Native Hawaiian or Pacific Islander victims are counted in the totals but not compared, because counts this small give unstable rates. 138 victims with unknown age or under one year old fall out of the age test only."
+    ],
+    [
+      "Window and population",
+      "Victims cover January 2022 to December 2025; the population is the ACS 2024 5-year estimate, an average over 2020 to 2024."
+    ],
+    [
+      "Least stable comparison",
+      "The Asian comparison moved +22% between 2022 to 2023 and 2024 to 2025 (-25% for aggravated assault), against 5% or less for the others. It rests on 160 Asian women victims in 2022 to 2023 and 129 Asian women victims in 2024 to 2025, so it is left out of the headline."
+    ]
+  ]
+}

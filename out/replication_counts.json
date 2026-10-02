@@ -1,0 +1,65 @@
+{
+ "sources": {
+  "primary": {
+   "label": "2022 to 2023",
+   "years": 2.0,
+   "counts": {
+    "all": {
+     "Black": 13277,
+     "Hispanic": 1037,
+     "White": 1046,
+     "Asian": 160
+    },
+    "partner": {
+     "Black": 4372,
+     "Hispanic": 322,
+     "White": 216,
+     "Asian": 25
+    },
+    "aggravated": {
+     "Black": 1587,
+     "Hispanic": 83,
+     "White": 90,
+     "Asian": 7
+    },
+    "simple": {
+     "Black": 11690,
+     "Hispanic": 954,
+     "White": 956,
+     "Asian": 153
+    }
+   }
+  },
+  "secondary": {
+   "label": "2024 to 2025",
+   "years": 2.0,
+   "counts": {
+    "all": {
+     "Black": 13064,
+     "Hispanic": 1073,
+     "White": 1010,
+     "Asian": 129
+    },
+    "partner": {
+     "Black": 4251,
+     "Hispanic": 317,
+     "White": 237,
+     "Asian": 26
+    },
+    "aggravated": {
+     "Black": 2027,
+     "Hispanic": 114,
+     "White": 108,
+     "Asian": 12
+    },
+    "simple": {
+     "Black": 11037,
+     "Hispanic": 959,
+     "White": 902,
+     "Asian": 117
+    }
+   }
+  }
+ },
+ "definition_notes": "DC has one records system for the whole window, so the check compares the first two years with the last two, with identical definitions (MPD, offenses 13A and 13B, individual victims, the same race mapping and population). It tests whether the ratios hold over time, not whether a different coding system would find them."
+}

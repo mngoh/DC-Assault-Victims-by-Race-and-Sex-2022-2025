@@ -1,0 +1,179 @@
+{
+ "sources": {
+  "primary": {
+   "label": "2022 to 2023",
+   "years": 2.0,
+   "rates": {
+    "all": {
+     "Black": 4239,
+     "Hispanic": 1282,
+     "White": 419,
+     "Asian": 460
+    },
+    "partner": {
+     "Black": 1396,
+     "Hispanic": 398,
+     "White": 87,
+     "Asian": 72
+    },
+    "aggravated": {
+     "Black": 507,
+     "Hispanic": 103,
+     "White": 36,
+     "Asian": 20
+    },
+    "simple": {
+     "Black": 3733,
+     "Hispanic": 1180,
+     "White": 383,
+     "Asian": 440
+    }
+   },
+   "ratios": {
+    "all": {
+     "Hispanic": 3.31,
+     "White": 10.12,
+     "Asian": 9.22
+    },
+    "partner": {
+     "Hispanic": 3.51,
+     "White": 16.05,
+     "Asian": 19.39
+    },
+    "aggravated": {
+     "Hispanic": 4.92,
+     "White": 14.08,
+     "Asian": 25.35
+    },
+    "simple": {
+     "Hispanic": 3.16,
+     "White": 9.75,
+     "Asian": 8.48
+    }
+   }
+  },
+  "secondary": {
+   "label": "2024 to 2025",
+   "years": 2.0,
+   "rates": {
+    "all": {
+     "Black": 4171,
+     "Hispanic": 1327,
+     "White": 405,
+     "Asian": 371
+    },
+    "partner": {
+     "Black": 1357,
+     "Hispanic": 392,
+     "White": 95,
+     "Asian": 75
+    },
+    "aggravated": {
+     "Black": 647,
+     "Hispanic": 141,
+     "White": 43,
+     "Asian": 34
+    },
+    "simple": {
+     "Black": 3524,
+     "Hispanic": 1186,
+     "White": 362,
+     "Asian": 336
+    }
+   },
+   "ratios": {
+    "all": {
+     "Hispanic": 3.14,
+     "White": 10.3,
+     "Asian": 11.24
+    },
+    "partner": {
+     "Hispanic": 3.46,
+     "White": 14.28,
+     "Asian": 18.09
+    },
+    "aggravated": {
+     "Hispanic": 4.59,
+     "White": 15.05,
+     "Asian": 19.03
+    },
+    "simple": {
+     "Hispanic": 2.97,
+     "White": 9.73,
+     "Asian": 10.49
+    }
+   }
+  }
+ },
+ "definition_notes": "DC has one records system for the whole window, so the check compares the first two years with the last two, with identical definitions (MPD, offenses 13A and 13B, individual victims, the same race mapping and population). It tests whether the ratios hold over time, not whether a different coding system would find them.",
+ "comparison": {
+  "all": {
+   "Hispanic": {
+    "first": 3.31,
+    "second": 3.14,
+    "change_pct": -5
+   },
+   "White": {
+    "first": 10.12,
+    "second": 10.3,
+    "change_pct": 2
+   },
+   "Asian": {
+    "first": 9.22,
+    "second": 11.24,
+    "change_pct": 22
+   }
+  },
+  "partner": {
+   "Hispanic": {
+    "first": 3.51,
+    "second": 3.46,
+    "change_pct": -1
+   },
+   "White": {
+    "first": 16.05,
+    "second": 14.28,
+    "change_pct": -11
+   },
+   "Asian": {
+    "first": 19.39,
+    "second": 18.09,
+    "change_pct": -7
+   }
+  },
+  "aggravated": {
+   "Hispanic": {
+    "first": 4.92,
+    "second": 4.59,
+    "change_pct": -7
+   },
+   "White": {
+    "first": 14.08,
+    "second": 15.05,
+    "change_pct": 7
+   },
+   "Asian": {
+    "first": 25.35,
+    "second": 19.03,
+    "change_pct": -25
+   }
+  },
+  "simple": {
+   "Hispanic": {
+    "first": 3.16,
+    "second": 2.97,
+    "change_pct": -6
+   },
+   "White": {
+    "first": 9.75,
+    "second": 9.73,
+    "change_pct": 0
+   },
+   "Asian": {
+    "first": 8.48,
+    "second": 10.49,
+    "change_pct": 24
+   }
+  }
+ }
+}
