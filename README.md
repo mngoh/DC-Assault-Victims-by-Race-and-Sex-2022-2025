@@ -9,7 +9,7 @@ The full page is `index.html`.
 Every number below is generated from `out/results.json`, `out/dc_checks.json` and `out/replication.json`.
 
 <!-- results:start -->
-**Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and at least 9 times the rate of White women. The gap is widest for the most serious assaults, and neighborhood accounts for only part of it.**
+**Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and about 10 times the rate of White women. The gap is widest for the most serious assaults, and neighborhood accounts for part of it.**
 
 Rates per 100,000 residents a year, 2022-01-01 to 2025-12-31:
 
