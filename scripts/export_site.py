@@ -44,6 +44,7 @@ def main():
             "missing_race_redistributed": chk["missing_race"]["ratios_redistributed"],
             "halves": {g: [v["first"], v["second"]] for g, v in rep["comparison"]["all"].items()},
             "least_stable": chk.get("least_stable", {}).get("group"),
+            "nonresident_excluded_ratios": R["tests"]["flags"]["nonresident"]["ratios"]["unflagged"],
             "severity": [{"label": t["label"], "n": t["n"], "ratio": t["ratio"], "ci": t["ci"]} for t in sev["tiers"]],
             "severity_min_n": sev["min_n"],
             "neighborhood": {"predicted_aggravated": nb["predicted_ratio"]["adw_per_1000"], "observed_aggravated": nb["aggravated_observed_ratio"],
