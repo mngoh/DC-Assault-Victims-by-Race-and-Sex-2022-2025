@@ -57,7 +57,7 @@
     "sex": "F",
     "label": "Black women"
   },
-  "headline": "Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and at least 9 times the rate of White women. Age, partner violence and non-resident victims do not explain the gap; where assaults happen is not in the data.",
+  "headline": "Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and at least 9 times the rate of White women. The gap is widest for the most serious assaults, and neighborhood accounts for only part of it.",
   "question": "Are Black women in DC assaulted at a higher rate than Hispanic, White and Asian women, and do the plain explanations account for it?",
   "flags": {
     "partner": {
@@ -111,7 +111,10 @@
   ],
   "sources": [
     "FBI National Incident-Based Reporting System (NIBRS) state files for the District of Columbia, 2022 to 2025",
-    "US Census Bureau ACS 2020 to 2024 five-year estimates via Census Reporter"
+    "US Census Bureau ACS 2020 to 2024 five-year estimates via Census Reporter",
+    "DC Open Data, MPD Crime Incidents 2022 to 2025 (locations, no victim race)",
+    "BJS, Criminal Victimization, 2024 (NCJ 310547)",
+    "BJS, Household Poverty and Nonfatal Violent Victimization, 2008-2012 (NCJ 248384)"
   ],
   "links": {
     "code": "https://github.com/mngoh/DC-Assault",
@@ -119,8 +122,16 @@
   },
   "extra_caveats": [
     [
-      "Where assaults happen is not in this data",
-      "The FBI's NIBRS files record no address, ward or police district. So this page cannot test whether location or neighborhood conditions account for the gap, and there is no tract-level model. In the Los Angeles analysis, location was the control that moved the gap most. Even where it can be tested, a gap that shrinks after location has been located, not explained away: neighborhoods are shaped by segregation."
+      "Victims have no location",
+      "The FBI's NIBRS files record no address, ward or police district, so the victim-level location test and the tract-level model from the Los Angeles analysis cannot run. The neighborhood section uses MPD's public incident locations instead. Those carry no victim race, so that check describes places, not victims."
+    ],
+    [
+      "Income is not in the victim data",
+      "NIBRS records nothing about a victim's income, and DC's economic divide is extreme. 26.3% of Black women are below the poverty line, against 5.1% of White women. Median household income is $60,764 for Black households and $170,201 for White ones. 43.1% of Black women live in census tracts with 25% or more poverty, against 6.2% of White women. Income could account for a large part of the gap; the neighborhood section measures only the part that runs through where women live."
+    ],
+    [
+      "Agencies in the file",
+      "The DC file covers the Metropolitan Police and Metro Transit Police only. Assaults recorded only by federal or campus police are missing. If those skew toward White women, the gap is somewhat overstated."
     ],
     [
       "Policing and reporting",

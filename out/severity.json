@@ -1,0 +1,142 @@
+{
+ "tiers": [
+  {
+   "label": "Simple assault, no serious injury",
+   "n": {
+    "Black": 22727,
+    "Hispanic": 1913,
+    "White": 1858,
+    "Asian": 270
+   },
+   "rate": {
+    "Black": 3628.4,
+    "Hispanic": 1182.7,
+    "White": 372.5,
+    "Asian": 387.8
+   },
+   "ratio": {
+    "Hispanic": 3.07,
+    "White": 9.74,
+    "Asian": 9.36
+   },
+   "ci": {
+    "Hispanic": [
+     2.9,
+     3.2
+    ],
+    "White": [
+     9.3,
+     10.2
+    ],
+    "Asian": [
+     8.3,
+     10.6
+    ]
+   }
+  },
+  {
+   "label": "Assault with serious injury",
+   "n": {
+    "Black": 2367,
+    "Hispanic": 133,
+    "White": 137,
+    "Asian": 12
+   },
+   "rate": {
+    "Black": 377.9,
+    "Hispanic": 82.2,
+    "White": 27.5,
+    "Asian": 17.2
+   },
+   "ratio": {
+    "Hispanic": 4.6,
+    "White": 13.76,
+    "Asian": 21.93
+   },
+   "ci": {
+    "Hispanic": [
+     3.9,
+     5.5
+    ],
+    "White": [
+     11.6,
+     16.5
+    ],
+    "Asian": [
+     12.5,
+     42.5
+    ]
+   }
+  },
+  {
+   "label": "Assault with a gun",
+   "n": {
+    "Black": 1110,
+    "Hispanic": 36,
+    "White": 38,
+    "Asian": 5
+   },
+   "rate": {
+    "Black": 177.2,
+    "Hispanic": 22.3,
+    "White": 7.6,
+    "Asian": 7.2
+   },
+   "ratio": {
+    "Hispanic": 7.96,
+    "White": 23.26,
+    "Asian": 24.68
+   },
+   "ci": {
+    "Hispanic": [
+     5.7,
+     11.4
+    ],
+    "White": [
+     16.8,
+     33.0
+    ],
+    "Asian": [
+     10.5,
+     76.1
+    ]
+   }
+  },
+  {
+   "label": "Homicide",
+   "n": {
+    "Black": 80,
+    "Hispanic": 4,
+    "White": 5,
+    "Asian": 1
+   },
+   "rate": {
+    "Black": 12.8,
+    "Hispanic": 2.5,
+    "White": 1.0,
+    "Asian": 1.4
+   },
+   "ratio": {
+    "Hispanic": 5.16,
+    "White": 12.74,
+    "Asian": 8.89
+   },
+   "ci": {
+    "Hispanic": [
+     1.9,
+     19.4
+    ],
+    "White": [
+     5.2,
+     40.3
+    ],
+    "Asian": [
+     1.6,
+     355.6
+    ]
+   }
+  }
+ ],
+ "min_n": 10,
+ "injury_recorded_pct": 58.4
+}

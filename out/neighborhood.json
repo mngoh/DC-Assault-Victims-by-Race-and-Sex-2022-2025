@@ -1,0 +1,146 @@
+{
+ "incidents": 15090,
+ "incidents_by_offense": {
+  "ROBBERY": 8967,
+  "ASSAULT W/DANGEROUS WEAPON": 4741,
+  "HOMICIDE": 759,
+  "SEX ABUSE": 623
+ },
+ "snapped_to_nearest_tract": 356,
+ "unassigned_incidents": 0,
+ "tracts": 206,
+ "min_pop": 500,
+ "years": 4.0,
+ "exposure": {
+  "adw_per_1000": {
+   "Black": 2.6,
+   "Hispanic": 1.32,
+   "White": 0.93,
+   "Asian": 1.05
+  },
+  "violent_per_1000": {
+   "Black": 7.08,
+   "Hispanic": 4.76,
+   "White": 3.97,
+   "Asian": 4.34
+  },
+  "adw_per_km2": {
+   "Black": 15.73,
+   "Hispanic": 11.86,
+   "White": 7.97,
+   "Asian": 9.67
+  }
+ },
+ "women_covered_pct": {
+  "adw_per_1000": {
+   "Black": 100.0,
+   "Hispanic": 100.0,
+   "White": 100.0,
+   "Asian": 100.0
+  },
+  "violent_per_1000": {
+   "Black": 100.0,
+   "Hispanic": 100.0,
+   "White": 100.0,
+   "Asian": 100.0
+  },
+  "adw_per_km2": {
+   "Black": 100.0,
+   "Hispanic": 100.0,
+   "White": 100.0,
+   "Asian": 100.0
+  }
+ },
+ "predicted_ratio": {
+  "adw_per_1000": {
+   "Hispanic": 1.97,
+   "White": 2.8,
+   "Asian": 2.48
+  },
+  "violent_per_1000": {
+   "Hispanic": 1.49,
+   "White": 1.78,
+   "Asian": 1.63
+  },
+  "adw_per_km2": {
+   "Hispanic": 1.33,
+   "White": 1.97,
+   "Asian": 1.63
+  }
+ },
+ "aggravated_observed_ratio": {
+  "Hispanic": 4.73,
+  "White": 14.43,
+  "Asian": 21.37
+ },
+ "aggravated_remaining_ratio": {
+  "Hispanic": 2.4,
+  "White": 5.15,
+  "Asian": 8.62
+ },
+ "aggravated_located_pct_log": {
+  "Hispanic": 44,
+  "White": 39,
+  "Asian": 30
+ },
+ "poverty_bands": [
+  {
+   "label": "Under 10%",
+   "tracts": 94,
+   "adw_per_1000": 0.79,
+   "women_pct": {
+    "Black": 24.2,
+    "Hispanic": 44.3,
+    "White": 63.5,
+    "Asian": 46.3
+   }
+  },
+  {
+   "label": "10% to 25%",
+   "tracts": 67,
+   "adw_per_1000": 1.75,
+   "women_pct": {
+    "Black": 32.7,
+    "Hispanic": 41.3,
+    "White": 30.3,
+    "Asian": 42.5
+   }
+  },
+  {
+   "label": "25% or more",
+   "tracts": 45,
+   "adw_per_1000": 3.55,
+   "women_pct": {
+    "Black": 43.1,
+    "Hispanic": 14.4,
+    "White": 6.2,
+    "Asian": 11.2
+   }
+  }
+ ],
+ "women_in_25pct_poverty_tracts": {
+  "Black": 43.1,
+  "Hispanic": 14.4,
+  "White": 6.2,
+  "Asian": 11.2
+ },
+ "citywide_income": {
+  "Black": {
+   "women_below_poverty_pct": 26.3,
+   "median_household_income": 60764
+  },
+  "White": {
+   "women_below_poverty_pct": 5.1,
+   "median_household_income": 170201
+  },
+  "Hispanic": {
+   "women_below_poverty_pct": 13.0,
+   "median_household_income": 117634
+  },
+  "Asian": {
+   "women_below_poverty_pct": 14.2,
+   "median_household_income": 126268
+  }
+ },
+ "release": "ACS 2024 5-year"
+}

@@ -8,6 +8,7 @@
                        x resident status, and the ratios recomputed.
   uneven fields        resident status and victim-offender relationship missing, by group
   exclusions           Metro Transit Police, officer victims, intimidation, unknown and infant ages
+  income               DC's poverty and income by race, from out/neighborhood.json (run scripts/neighborhood.py first)
 
 Writes out/dc_checks.json and regenerates `extra_caveats` in analysis.json from it, so every number in
 the caveats comes from this output.
@@ -111,14 +112,23 @@ def main():
     # caveats, generated from the checks above
     e, m, x = out["ethnicity"], out["missing_race"], out["excluded"]
     release = p.read_json("population.json")["release"]
+    nbh = p.read_json("neighborhood.json")  # scripts/neighborhood.py runs first
+    inc, hp = nbh["citywide_income"], nbh["women_in_25pct_poverty_tracts"]
     acs_year = int(re.search(r"\d{4}", release).group())
     rb = out["resident_blank_pct"]
     ru = out["relationship_unknown_pct"]
     caveats = [
-        ["Where assaults happen is not in this data",
-         "The FBI's NIBRS files record no address, ward or police district. So this page cannot test whether location or neighborhood conditions account for the gap, "
-         "and there is no tract-level model. In the Los Angeles analysis, location was the control that moved the gap most. "
-         "Even where it can be tested, a gap that shrinks after location has been located, not explained away: neighborhoods are shaped by segregation."],
+        ["Victims have no location",
+         "The FBI's NIBRS files record no address, ward or police district, so the victim-level location test and the tract-level model from the Los Angeles "
+         "analysis cannot run. The neighborhood section uses MPD's public incident locations instead. Those carry no victim race, so that check describes places, not victims."],
+        ["Income is not in the victim data",
+         f"NIBRS records nothing about a victim's income, and DC's economic divide is extreme. {inc['Black']['women_below_poverty_pct']}% of Black women are below the poverty line, "
+         f"against {inc['White']['women_below_poverty_pct']}% of White women. Median household income is ${inc['Black']['median_household_income']:,} for Black households and "
+         f"${inc['White']['median_household_income']:,} for White ones. {hp['Black']}% of Black women live in census tracts with 25% or more poverty, against {hp['White']}% of White women. "
+         "Income could account for a large part of the gap; the neighborhood section measures only the part that runs through where women live."],
+        ["Agencies in the file",
+         "The DC file covers the Metropolitan Police and Metro Transit Police only. Assaults recorded only by federal or campus police are missing. "
+         "If those skew toward White women, the gap is somewhat overstated."],
         ["Policing and reporting",
          "Police data reflects where officers patrol and who calls them. This data cannot separate more policing or more reporting from more assaults."],
         ["Hispanic ethnicity is often missing",

@@ -1,0 +1,16 @@
+{
+  "note": "National survey figures used as context on the page. Each was read in the source document, not taken from a summary. NCVS counts crimes whether or not they were reported to police, for persons age 12 or older, both sexes; White and Black exclude Hispanic persons.",
+  "cv2024": {
+    "source": "Criminal Victimization, 2024 (Tapp and Coen, BJS, September 2025, NCJ 310547)",
+    "url": "https://bjs.ojp.gov/document/cv24.pdf",
+    "reported_to_police_pct_by_race": {"table": "Table 5", "2024": {"White": 48.0, "Black": 50.7, "Hispanic": 48.0}, "2023": {"White": 41.9, "Black": 55.7, "Hispanic": 47.8}},
+    "reported_to_police_pct_by_type_2024": {"table": "Tables 4 and 10", "simple_assault": 40.4, "aggravated_assault": 69.1, "with_injury": 60.0, "with_weapon": 70.1, "firearm": 74.6},
+    "violent_rate_per_1000_2024": {"table": "Table 3", "White": 22.1, "Black": 23.4, "Hispanic": 23.5, "income_under_25k": 38.3, "income_200k_plus": 22.1},
+    "prevalence_2024": {"table": "Highlights", "pct_persons_victimized": 1.45, "victimizations_per_1000": 23.3}
+  },
+  "poverty2014": {
+    "source": "Household Poverty and Nonfatal Violent Victimization, 2008-2012 (Harrell, Langton, Berzofsky, Couzens and Smiley-McDonald, BJS, November 2014, NCJ 248384)",
+    "url": "https://bjs.ojp.gov/library/publications/household-poverty-and-nonfatal-violent-victimization-2008-2012",
+    "violent_rate_per_1000_poor_urban": {"Black": 51.3, "White": 56.4}
+  }
+}

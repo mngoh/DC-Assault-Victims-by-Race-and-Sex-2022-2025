@@ -1,0 +1,157 @@
+{
+ "tests": [
+  {
+   "id": "sevChart",
+   "title": "Severity",
+   "text": "Does the gap narrow for crimes that reach police anyway? It widens: against White women from 9.7x for simple assault without serious injury to 23.3x for assaults with a gun, and against Hispanic women from 3.1x to 8x. Homicide: 80 Black women and 5 White women were killed, 12.7x (95% CI 5.2 to 40.3), too few to chart. Asian women are left out of the chart: only 5 were victims of assault with a gun. Bars need 10 victims in the comparison group.",
+   "labels": [
+    [
+     "Simple assault,",
+     "no serious injury"
+    ],
+    [
+     "Serious",
+     "injury"
+    ],
+    [
+     "With",
+     "a gun"
+    ]
+   ],
+   "datasets": [
+    {
+     "label": "vs Hispanic women",
+     "data": [
+      3.07,
+      4.6,
+      7.96
+     ],
+     "color": "blue"
+    },
+    {
+     "label": "vs White women",
+     "data": [
+      9.74,
+      13.76,
+      23.26
+     ],
+     "color": "blueLight"
+    }
+   ],
+   "ytitle": "Black women's rate as a multiple"
+  }
+ ],
+ "reporting": {
+  "title": "Reporting: partly testable",
+  "text": "If the gap came from Black women reporting more, it would narrow for the crimes reported most often, and it widens instead (Severity, above). Nationally, 40% of simple assaults reach police against 75% of crimes involving a gun, and reporting differs little by race: 51% of violent crimes against Black victims and 48% against White victims in 2024 (56% and 42% in 2023). For reporting alone to make the 10.2x gap, White women would have to report under 10% of assaults even if Black women reported all of them. Unreported assaults stay invisible here."
+ },
+ "sections": [
+  {
+   "title": "Neighborhood and income",
+   "note": "NIBRS has no location. MPD's public incident data has locations but no victim race. This section places 4,741 assaults with a dangerous weapon from 2022 to 2025 in census tracts and averages each tract's rate per resident over where each group's women live. It describes places, not victims.",
+   "boxes": [
+    {
+     "id": "povChart",
+     "title": "Where women live, by tract poverty",
+     "text": "43.1% of Black women live in tracts where 25% or more of residents are poor, against 6.2% of White women. Citywide, 26.3% of Black women are below the poverty line, against 5.1% of White women, and median household income is $60,764 for Black households and $170,201 for White ones.",
+     "labels": [
+      "Under 10%",
+      "10% to 25%",
+      "25% or more"
+     ],
+     "datasets": [
+      {
+       "label": "Black women",
+       "data": [
+        24.2,
+        32.7,
+        43.1
+       ],
+       "color": "red"
+      },
+      {
+       "label": "Hispanic women",
+       "data": [
+        44.3,
+        41.3,
+        14.4
+       ],
+       "color": "blue"
+      },
+      {
+       "label": "White women",
+       "data": [
+        63.5,
+        30.3,
+        6.2
+       ],
+       "color": "blueLight"
+      },
+      {
+       "label": "Asian women",
+       "data": [
+        46.3,
+        42.5,
+        11.2
+       ],
+       "color": "muted"
+      }
+     ],
+     "ytitle": "% of each group's women"
+    },
+    {
+     "id": "violChart",
+     "title": "Recorded violence by tract poverty",
+     "text": "Tracts where 25% or more of residents are poor record 3.55 assaults with a dangerous weapon per 1,000 residents a year, against 0.79 in tracts under 10%. Averaged over where women live, Black women's tracts record 2.8x the rate of White women's and 2x Hispanic women's.",
+     "labels": [
+      "Under 10%",
+      "10% to 25%",
+      "25% or more"
+     ],
+     "datasets": [
+      {
+       "label": "Assaults with a dangerous weapon per 1,000 residents a year",
+       "data": [
+        0.79,
+        1.75,
+        3.55
+       ],
+       "color": "blue"
+      }
+     ],
+     "ytitle": "Per 1,000 residents a year",
+     "legend": false
+    }
+   ],
+   "findings": [
+    {
+     "title": "What this check says",
+     "text": "If every woman faced her own tract's rate, Black women's aggravated assault rate would be 2.8x White women's and 2x Hispanic women's. It is 14.4x and 4.7x. Neighborhood accounts for a factor of about 2.8 against White women; a factor of about 5.2 remains that this check cannot place. Other definitions give a smaller neighborhood factor: 1.8x counting all violent crime, 2x per square kilometer.",
+     "red": true
+    },
+    {
+     "title": "What it cannot say",
+     "text": "These are tract averages, not victims. Neighbors on different blocks can face different risks, and assaults away from home are not placed. Neighborhood poverty is shaped by segregation and discrimination, so the part of the gap found in neighborhoods is located, not explained away."
+    },
+    {
+     "title": "National context",
+     "text": "The national crime survey, which counts crimes whether or not they were reported, finds similar rates of violence for Black and White people: 23.4 and 22.1 per 1,000 in 2024, both sexes. Poor urban Black and White residents had similar rates too (51.3 and 56.4 per 1,000, 2008 to 2012)."
+    }
+   ]
+  }
+ ],
+ "readme": [
+  [
+   "Severity",
+   "against White women 9.7x for simple assault without serious injury, 13.8x with serious injury, 23.3x with a gun, 12.7x for homicide (95% CI 5.2 to 40.3, 5 White women killed)"
+  ],
+  [
+   "Reporting",
+   "If the gap came from Black women reporting more, it would narrow for the crimes reported most often, and it widens instead (Severity, above). Nationally, 40% of simple assaults reach police against 75% of crimes involving a gun, and reporting differs little by race: 51% of violent crimes against Black victims and 48% against White victims in 2024 (56% and 42% in 2023). For reporting alone to make the 10.2x gap, White women would have to report under 10% of assaults even if Black women reported all of them. Unreported assaults stay invisible here"
+  ],
+  [
+   "Neighborhood",
+   "Black women's tracts record 2.8x White women's rate of assaults with a dangerous weapon per resident; that predicts a 2.8x aggravated assault gap against the 14.4x observed, leaving about 5.2x"
+  ]
+ ]
+}

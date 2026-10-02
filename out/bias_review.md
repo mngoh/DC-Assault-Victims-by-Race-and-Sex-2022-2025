@@ -25,13 +25,15 @@ Files: `index.html`, `README.md`
   Victim data says nothing about who offended. Remove, or state that offenders are not in the data.
 - **review: Offender implication** (`offender`): "Partner assaults are identified from the victim-offender relationship, which is unknown or blank for 18.2% of Black, 28.0% of Hispanic, 41.8% of White, 42.6% of Asian women victims. Where it is missing more often, the pa..."  
   Victim data says nothing about who offended. Remove, or state that offenders are not in the data.
+- **review: Share-of-people claim** (`43.1% of Black women`): "43.1% of Black women live in tracts where 25% or more of residents are poor, against 6.2% of White women. Citywide, 26.3% of Black women are below the poverty line, against 5.1% of White women, and median household incom..."  
+  Report rates count reports, not people. Do not convert them into shares of a population.
 - **review: Share-of-people claim** (`1.2% of Black residents`): "1.2% of Black residents are also Hispanic, so they sit in both denominators."  
   Report rates count reports, not people. Do not convert them into shares of a population.
-- **review: Explained-away language** (`explain the gap`): "Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and at least 9 times the rate of White women. Age, partner violence and non-resident victims do not explain the gap; where assaults happen is not..."  
-  Controls like neighborhood and income are themselves shaped by segregation and discrimination. 'Explained by location' does not mean 'not related to race'.
+- **review: Share-of-people claim** (`26.3% of Black women`): "NIBRS records nothing about a victim's income, and DC's economic divide is extreme. 26.3% of Black women are below the poverty line, against 5.1% of White women. Median household income is $60,764 for Black households an..."  
+  Report rates count reports, not people. Do not convert them into shares of a population.
 - **review: Explained-away language** (`accounts for the gap`): "Women only (26,341 Black women, 4,455 other women). Each cut asks whether a plain explanation accounts for the gap."  
   Controls like neighborhood and income are themselves shaped by segregation and discrimination. 'Explained by location' does not mean 'not related to race'.
-- **review: Explained-away language** (`account for the gap`): "The FBI's NIBRS files record no address, ward or police district. So this page cannot test whether location or neighborhood conditions account for the gap, and there is no tract-level model. In the Los Angeles analysis, ..."  
+- **review: Explained-away language** (`explained away`): "These are tract averages, not victims. Neighbors on different blocks can face different risks, and assaults away from home are not placed. Neighborhood poverty is shaped by segregation and discrimination, so the part of ..."  
   Controls like neighborhood and income are themselves shaped by segregation and discrimination. 'Explained by location' does not mean 'not related to race'.
 
 ### README.md
@@ -49,10 +51,8 @@ Files: `index.html`, `README.md`
   Use groups as adjectives (Black women, White residents), never as nouns or as statements about what a group is.
 - **review: Share-of-people claim** (`1.2% of Black residents`): "- Overlapping groups: 1.2% of Black residents are also Hispanic, so they sit in both denominators."  
   Report rates count reports, not people. Do not convert them into shares of a population.
-- **review: Explained-away language** (`explain the gap`): "**Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and at least 9 times the rate of White women. Age, partner violence and non-resident victims do not explain the gap; where assaults happen is n..."  
-  Controls like neighborhood and income are themselves shaped by segregation and discrimination. 'Explained by location' does not mean 'not related to race'.
-- **review: Explained-away language** (`account for the gap`): "- Where assaults happen is not in this data: The FBI's NIBRS files record no address, ward or police district. So this page cannot test whether location or neighborhood conditions account for the gap, and there is no tra..."  
-  Controls like neighborhood and income are themselves shaped by segregation and discrimination. 'Explained by location' does not mean 'not related to race'.
+- **review: Share-of-people claim** (`26.3% of Black women`): "- Income is not in the victim data: NIBRS records nothing about a victim's income, and DC's economic divide is extreme. 26.3% of Black women are below the poverty line, against 5.1% of White women. Median household incom..."  
+  Report rates count reports, not people. Do not convert them into shares of a population.
 
 ### Required statements
 
