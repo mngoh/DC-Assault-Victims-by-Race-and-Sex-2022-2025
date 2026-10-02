@@ -77,7 +77,7 @@ Caveats:
 
 ## Rebuild
 
-Python from disparity-kit (`~/.claude/disparity-kit/.venv/bin/python`); `KIT=~/.claude/disparity-kit/kit`.
+Python from disparity-kit (`~/.claude/disparity-kit/.venv/bin/python`); `KIT=~/.claude/disparity-kit/kit`. Needs disparity-kit commit `7112d1c` or later, which reads flags from any column and draws the page sections in `out/extra_sections.json`.
 
 ```bash
 python scripts/flatten_nibrs.py                      # data/raw/DC-*.zip -> data/interim/victim_offenses.csv
