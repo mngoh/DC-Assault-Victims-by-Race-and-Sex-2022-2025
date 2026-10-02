@@ -97,6 +97,7 @@ python scripts/dc_checks.py analysis.json            # -> out/dc_checks.json, ex
 python scripts/page_extras.py analysis.json          # -> out/extra_sections.json (severity, reporting, neighborhood, protection)
 python $KIT/build_page.py analysis.json              # -> index.html, results block above
 python $KIT/bias_scan.py analysis.json               # -> out/bias_review.md
+python scripts/export_site.py analysis.json          # -> out/site_payload.json (numbers for Justice Lens /protection)
 ```
 
 ## Files
@@ -106,7 +107,7 @@ python $KIT/bias_scan.py analysis.json               # -> out/bias_review.md
 - `data/external/mpd_violent_incidents.csv`: MPD's public violent incidents with locations, 2022 to 2025, fetched by `scripts/fetch_mpd_incidents.py`. Refetch to update.
 - `docs/clearance-test-plan.md`: the clearance test as written before it was run.
 - `data/external/bjs_ncvs.json`: the national survey figures quoted on the page, with the table each came from.
-- `out/`: the audits, population, results, DC checks, replication and bias review.
+- `out/`: the audits, population, results, DC checks, replication and bias review. `out/site_payload.json` holds the numbers Justice Lens shows at justicelensai.com/protection, with the commit they came from.
 
 ## Sources
 

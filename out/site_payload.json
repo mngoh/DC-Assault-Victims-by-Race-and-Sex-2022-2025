@@ -1,0 +1,778 @@
+{
+ "schema": 1,
+ "generated": "2026-10-02",
+ "source": {
+  "repo": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025",
+  "commit": "237023a",
+  "report": "https://mngoh.github.io/DC-Assault-Victims-by-Race-and-Sex-2022-2025/",
+  "test_plan": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025/blob/main/docs/clearance-test-plan.md"
+ },
+ "data": {
+  "agency": "Metropolitan Police Department",
+  "nibrs_years": [
+   2022,
+   2025
+  ],
+  "offenses": {
+   "simple": "Simple assault",
+   "aggravated": "Aggravated assault"
+  },
+  "acs": "ACS 2024 5-year",
+  "focus": {
+   "group": "Black",
+   "sex": "F",
+   "label": "Black women"
+  },
+  "groups": [
+   "Black",
+   "Hispanic",
+   "White",
+   "Asian"
+  ],
+  "victims": 56092,
+  "known_race_and_sex": 53248
+ },
+ "harm": {
+  "rates_per_100k": {
+   "Black": {
+    "F": 4205,
+    "M": 3114
+   },
+   "Hispanic": {
+    "F": 1304,
+    "M": 1683
+   },
+   "White": {
+    "F": 412,
+    "M": 618
+   },
+   "Asian": {
+    "F": 415,
+    "M": 839
+   }
+  },
+  "ratios": {
+   "Hispanic": 3.22,
+   "White": 10.21,
+   "Asian": 10.13
+  },
+  "women_victims": {
+   "Black": 26341,
+   "Hispanic": 2110,
+   "White": 2056,
+   "Asian": 289
+  },
+  "race_coding_worst_case": {
+   "Hispanic": 2.96,
+   "White": 9.38,
+   "Asian": 9.31
+  },
+  "race_coding_combo_pct": 9,
+  "ethnicity_range": {
+   "Hispanic": [
+    2.22,
+    3.22
+   ],
+   "White": [
+    10.21,
+    19.11
+   ]
+  },
+  "missing_race_redistributed": {
+   "Hispanic": 3.18,
+   "White": 10.02,
+   "Asian": 9.88
+  },
+  "halves": {
+   "Hispanic": [
+    3.31,
+    3.14
+   ],
+   "White": [
+    10.12,
+    10.3
+   ],
+   "Asian": [
+    9.22,
+    11.24
+   ]
+  },
+  "least_stable": "Asian",
+  "severity": [
+   {
+    "label": "Simple assault, no serious injury",
+    "n": {
+     "Black": 22727,
+     "Hispanic": 1913,
+     "White": 1858,
+     "Asian": 270
+    },
+    "ratio": {
+     "Hispanic": 3.07,
+     "White": 9.74,
+     "Asian": 9.36
+    },
+    "ci": {
+     "Hispanic": [
+      2.9,
+      3.2
+     ],
+     "White": [
+      9.3,
+      10.2
+     ],
+     "Asian": [
+      8.3,
+      10.6
+     ]
+    }
+   },
+   {
+    "label": "Assault with serious injury",
+    "n": {
+     "Black": 2367,
+     "Hispanic": 133,
+     "White": 137,
+     "Asian": 12
+    },
+    "ratio": {
+     "Hispanic": 4.6,
+     "White": 13.76,
+     "Asian": 21.93
+    },
+    "ci": {
+     "Hispanic": [
+      3.9,
+      5.5
+     ],
+     "White": [
+      11.6,
+      16.5
+     ],
+     "Asian": [
+      12.5,
+      42.5
+     ]
+    }
+   },
+   {
+    "label": "Assault with a gun",
+    "n": {
+     "Black": 1110,
+     "Hispanic": 36,
+     "White": 38,
+     "Asian": 5
+    },
+    "ratio": {
+     "Hispanic": 7.96,
+     "White": 23.26,
+     "Asian": 24.68
+    },
+    "ci": {
+     "Hispanic": [
+      5.7,
+      11.4
+     ],
+     "White": [
+      16.8,
+      33.0
+     ],
+     "Asian": [
+      10.5,
+      76.1
+     ]
+    }
+   },
+   {
+    "label": "Homicide",
+    "n": {
+     "Black": 80,
+     "Hispanic": 4,
+     "White": 5,
+     "Asian": 1
+    },
+    "ratio": {
+     "Hispanic": 5.16,
+     "White": 12.74,
+     "Asian": 8.89
+    },
+    "ci": {
+     "Hispanic": [
+      1.9,
+      19.4
+     ],
+     "White": [
+      5.2,
+      40.3
+     ],
+     "Asian": [
+      1.6,
+      355.6
+     ]
+    }
+   }
+  ],
+  "severity_min_n": 10,
+  "neighborhood": {
+   "predicted_aggravated": {
+    "Hispanic": 1.97,
+    "White": 2.8,
+    "Asian": 2.48
+   },
+   "observed_aggravated": {
+    "Hispanic": 4.73,
+    "White": 14.43,
+    "Asian": 21.37
+   },
+   "remaining_aggravated": {
+    "Hispanic": 2.4,
+    "White": 5.15,
+    "Asian": 8.62
+   },
+   "women_in_25pct_poverty_tracts": {
+    "Black": 43.1,
+    "Hispanic": 14.4,
+    "White": 6.2,
+    "Asian": 11.2
+   },
+   "adw_per_1000_by_poverty": [
+    {
+     "label": "Under 10%",
+     "rate": 0.79
+    },
+    {
+     "label": "10% to 25%",
+     "rate": 1.75
+    },
+    {
+     "label": "25% or more",
+     "rate": 3.55
+    }
+   ]
+  }
+ },
+ "protection": {
+  "window_days": 90,
+  "victims": {
+   "Black": 26341,
+   "Hispanic": 2110,
+   "White": 2056,
+   "Asian": 289
+  },
+  "unknown_race_left_out": 1098,
+  "relationship_order": [
+   "partner",
+   "family",
+   "known",
+   "stranger",
+   "unknown"
+  ],
+  "relationship_labels": {
+   "partner": "Partner",
+   "family": "Other family",
+   "known": "Known, not family",
+   "stranger": "Stranger",
+   "unknown": "Unknown"
+  },
+  "relationship_share": {
+   "Black": {
+    "partner": 32.7,
+    "family": 15.0,
+    "known": 28.8,
+    "stranger": 5.0,
+    "unknown": 18.5
+   },
+   "Hispanic": {
+    "partner": 30.3,
+    "family": 9.4,
+    "known": 20.3,
+    "stranger": 11.9,
+    "unknown": 28.1
+   },
+   "White": {
+    "partner": 22.0,
+    "family": 2.7,
+    "known": 15.5,
+    "stranger": 17.9,
+    "unknown": 41.9
+   },
+   "Asian": {
+    "partner": 17.6,
+    "family": 4.2,
+    "known": 12.1,
+    "stranger": 23.2,
+    "unknown": 42.9
+   }
+  },
+  "crude": {
+   "Black": {
+    "arrest90": 38.4,
+    "same_day": 32.5,
+    "later": 5.9,
+    "exceptional": 12.5,
+    "victim_refused": 6.4,
+    "prosecution_declined": 5.7
+   },
+   "Hispanic": {
+    "arrest90": 40.8,
+    "same_day": 35.2,
+    "later": 5.5,
+    "exceptional": 7.4,
+    "victim_refused": 2.8,
+    "prosecution_declined": 4.4
+   },
+   "White": {
+    "arrest90": 33.4,
+    "same_day": 29.2,
+    "later": 4.2,
+    "exceptional": 6.9,
+    "victim_refused": 1.9,
+    "prosecution_declined": 4.6
+   },
+   "Asian": {
+    "arrest90": 34.3,
+    "same_day": 30.4,
+    "later": 3.8,
+    "exceptional": 6.6,
+    "victim_refused": 1.4,
+    "prosecution_declined": 4.5
+   }
+  },
+  "by_relationship": {
+   "partner": {
+    "Black": {
+     "n": 8623,
+     "arrest90": 44.1
+    },
+    "Hispanic": {
+     "n": 639,
+     "arrest90": 57.3
+    },
+    "White": {
+     "n": 453,
+     "arrest90": 59.2
+    },
+    "Asian": {
+     "n": 51,
+     "arrest90": 52.9
+    }
+   },
+   "family": {
+    "Black": {
+     "n": 3953,
+     "arrest90": 57.4
+    },
+    "Hispanic": {
+     "n": 198,
+     "arrest90": 66.7
+    },
+    "White": {
+     "n": 56,
+     "arrest90": 71.4
+    },
+    "Asian": {
+     "n": 12,
+     "arrest90": 91.7
+    }
+   },
+   "known": {
+    "Black": {
+     "n": 7587,
+     "arrest90": 36.4
+    },
+    "Hispanic": {
+     "n": 429,
+     "arrest90": 41.3
+    },
+    "White": {
+     "n": 319,
+     "arrest90": 35.4
+    },
+    "Asian": {
+     "n": 35,
+     "arrest90": 45.7
+    }
+   },
+   "stranger": {
+    "Black": {
+     "n": 1304,
+     "arrest90": 41.1
+    },
+    "Hispanic": {
+     "n": 251,
+     "arrest90": 36.7
+    },
+    "White": {
+     "n": 367,
+     "arrest90": 38.4
+    },
+    "Asian": {
+     "n": 67,
+     "arrest90": 38.8
+    }
+   },
+   "unknown": {
+    "Black": {
+     "n": 4874,
+     "arrest90": 15.2
+    },
+    "Hispanic": {
+     "n": 593,
+     "arrest90": 15.7
+    },
+    "White": {
+     "n": 861,
+     "arrest90": 14.4
+    },
+    "Asian": {
+     "n": 124,
+     "arrest90": 15.3
+    }
+   }
+  },
+  "comparisons": {
+   "Hispanic": {
+    "pooled": {
+     "rr": 0.86,
+     "ci": [
+      0.81,
+      0.9
+     ],
+     "strata": 10
+    },
+    "regression": {
+     "rr": 0.85,
+     "ci": [
+      0.8,
+      0.89
+     ]
+    },
+    "by_relationship": {
+     "partner": {
+      "rr": 0.77,
+      "ci": [
+       0.72,
+       0.83
+      ],
+      "strata": 2
+     },
+     "family": {
+      "rr": 0.86,
+      "ci": [
+       0.78,
+       0.95
+      ],
+      "strata": 2
+     },
+     "known": {
+      "rr": 0.87,
+      "ci": [
+       0.77,
+       0.97
+      ],
+      "strata": 2
+     },
+     "stranger": {
+      "rr": 1.09,
+      "ci": [
+       0.92,
+       1.3
+      ],
+      "strata": 2
+     },
+     "unknown": {
+      "rr": 0.97,
+      "ci": [
+       0.79,
+       1.18
+      ],
+      "strata": 2
+     }
+    },
+    "halves": {
+     "2022 to 2023": {
+      "rr": 0.82,
+      "ci": [
+       0.76,
+       0.88
+      ],
+      "strata": 10
+     },
+     "2024 to 2025": {
+      "rr": 0.89,
+      "ci": [
+       0.83,
+       0.96
+      ],
+      "strata": 10
+     }
+    },
+    "same_day": {
+     "rr": 0.85,
+     "ci": [
+      0.8,
+      0.9
+     ],
+     "strata": 10
+    },
+    "later": {
+     "rr": 0.93,
+     "ci": [
+      0.77,
+      1.11
+     ],
+     "strata": 10
+    },
+    "victim_refused": {
+     "rr": 1.9,
+     "ci": [
+      1.48,
+      2.45
+     ],
+     "strata": 10
+    },
+    "prosecution_declined": {
+     "rr": 1.25,
+     "ci": [
+      1.02,
+      1.53
+     ],
+     "strata": 10
+    },
+    "decision": "mixed"
+   },
+   "White": {
+    "pooled": {
+     "rr": 0.9,
+     "ci": [
+      0.85,
+      0.96
+     ],
+     "strata": 10
+    },
+    "regression": {
+     "rr": 0.91,
+     "ci": [
+      0.85,
+      0.96
+     ]
+    },
+    "by_relationship": {
+     "partner": {
+      "rr": 0.74,
+      "ci": [
+       0.69,
+       0.81
+      ],
+      "strata": 2
+     },
+     "family": {
+      "rr": 0.8,
+      "ci": [
+       0.68,
+       0.95
+      ],
+      "strata": 2
+     },
+     "known": {
+      "rr": 1.01,
+      "ci": [
+       0.87,
+       1.18
+      ],
+      "strata": 2
+     },
+     "stranger": {
+      "rr": 1.05,
+      "ci": [
+       0.91,
+       1.21
+      ],
+      "strata": 2
+     },
+     "unknown": {
+      "rr": 1.04,
+      "ci": [
+       0.87,
+       1.24
+      ],
+      "strata": 2
+     }
+    },
+    "halves": {
+     "2022 to 2023": {
+      "rr": 0.88,
+      "ci": [
+       0.81,
+       0.96
+      ],
+      "strata": 9
+     },
+     "2024 to 2025": {
+      "rr": 0.92,
+      "ci": [
+       0.84,
+       0.99
+      ],
+      "strata": 10
+     }
+    },
+    "same_day": {
+     "rr": 0.88,
+     "ci": [
+      0.82,
+      0.94
+     ],
+     "strata": 10
+    },
+    "later": {
+     "rr": 1.06,
+     "ci": [
+      0.86,
+      1.31
+     ],
+     "strata": 10
+    },
+    "victim_refused": {
+     "rr": 2.1,
+     "ci": [
+      1.54,
+      2.87
+     ],
+     "strata": 10
+    },
+    "prosecution_declined": {
+     "rr": 1.11,
+     "ci": [
+      0.91,
+      1.36
+     ],
+     "strata": 10
+    },
+    "decision": "mixed"
+   },
+   "Asian": {
+    "pooled": {
+     "rr": 0.88,
+     "ci": [
+      0.76,
+      1.03
+     ],
+     "strata": 10
+    },
+    "regression": {
+     "rr": 0.88,
+     "ci": [
+      0.76,
+      1.03
+     ]
+    },
+    "by_relationship": {
+     "partner": {
+      "rr": 0.83,
+      "ci": [
+       0.64,
+       1.07
+      ],
+      "strata": 2
+     },
+     "family": {
+      "rr": 0.63,
+      "ci": [
+       0.53,
+       0.74
+      ],
+      "strata": 2
+     },
+     "known": {
+      "rr": 0.79,
+      "ci": [
+       0.55,
+       1.14
+      ],
+      "strata": 2
+     },
+     "stranger": {
+      "rr": 1.04,
+      "ci": [
+       0.76,
+       1.41
+      ],
+      "strata": 2
+     },
+     "unknown": {
+      "rr": 0.98,
+      "ci": [
+       0.65,
+       1.49
+      ],
+      "strata": 2
+     }
+    },
+    "halves": {
+     "2022 to 2023": {
+      "rr": 0.9,
+      "ci": [
+       0.72,
+       1.13
+      ],
+      "strata": 8
+     },
+     "2024 to 2025": {
+      "rr": 0.85,
+      "ci": [
+       0.69,
+       1.04
+      ],
+      "strata": 10
+     }
+    },
+    "same_day": {
+     "rr": 0.85,
+     "ci": [
+      0.72,
+      1.01
+     ],
+     "strata": 10
+    },
+    "later": {
+     "rr": 1.11,
+     "ci": [
+      0.63,
+      1.97
+     ],
+     "strata": 10
+    },
+    "victim_refused": {
+     "rr": 2.54,
+     "ci": [
+      0.96,
+      6.71
+     ],
+     "strata": 10
+    },
+    "prosecution_declined": {
+     "rr": 1.19,
+     "ci": [
+      0.7,
+      2.03
+     ],
+     "strata": 10
+    },
+    "decision": "not asserted (small numbers)"
+   }
+  }
+ },
+ "exclusions": {
+  "metro_transit_victims": 5678,
+  "officer_victims": 3067,
+  "intimidation_victims": 18691,
+  "age_unknown": 75,
+  "infants": 63,
+  "not_rated_race": {
+   "I": 57,
+   "P": 33
+  },
+  "unknown_race_or_sex": 2844
+ }
+}
