@@ -24,6 +24,7 @@ def main():
     p = Project(sys.argv[1])
     R, pop = p.read_json("results.json"), p.read_json("population.json")
     sev, nb, chk, rep, cl = (p.read_json(f) for f in ["severity.json", "neighborhood.json", "dc_checks.json", "replication.json", "clearance.json"])
+    bjs = json.loads((p.root / "data/external/bjs_ncvs.json").read_text())  # national figures, each read in its source
     G, S = p.focus
     commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=p.root, capture_output=True, text=True).stdout.strip()
     payload = {
@@ -59,6 +60,9 @@ def main():
                                 "decision": c["decision"]} for g, c in cl["comparisons"].items()},
         },
         "exclusions": {**chk["excluded"], "unknown_race_or_sex": R["counts"]["total"] - R["counts"]["known"]},
+        "context": {"source": bjs["cv2024"]["source"], "url": bjs["cv2024"]["url"],
+                    "reported_to_police_pct_2024": {k: bjs["cv2024"]["reported_to_police_pct_by_type_2024"][k]
+                                                    for k in ("simple_assault", "aggravated_assault", "firearm")}},
     }
     p.write_json("site_payload.json", payload)
 

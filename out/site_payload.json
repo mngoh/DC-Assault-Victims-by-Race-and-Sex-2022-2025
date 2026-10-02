@@ -3,7 +3,7 @@
  "generated": "2026-10-02",
  "source": {
   "repo": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025",
-  "commit": "237023a",
+  "commit": "a067fc6",
   "report": "https://mngoh.github.io/DC-Assault-Victims-by-Race-and-Sex-2022-2025/",
   "test_plan": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025/blob/main/docs/clearance-test-plan.md"
  },
@@ -774,5 +774,14 @@
    "P": 33
   },
   "unknown_race_or_sex": 2844
+ },
+ "context": {
+  "source": "Criminal Victimization, 2024 (Tapp and Coen, BJS, September 2025, NCJ 310547)",
+  "url": "https://bjs.ojp.gov/document/cv24.pdf",
+  "reported_to_police_pct_2024": {
+   "simple_assault": 40.4,
+   "aggravated_assault": 69.1,
+   "firearm": 74.6
+  }
  }
 }
