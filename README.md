@@ -32,6 +32,7 @@ Tests:
 - Severity: against White women 9.7x for simple assault without serious injury, 13.8x with serious injury, 23.3x with a gun, 12.7x for homicide (95% CI 5.2 to 40.3, 5 White women killed).
 - Reporting: If the gap came from Black women reporting more, it would narrow for the crimes reported most often, and it widens instead (Severity, above). Nationally, 40% of simple assaults reach police against 75% of crimes involving a gun, and reporting differs little by race: 51% of violent crimes against Black victims and 48% against White victims in 2024 (56% and 42% in 2023). For reporting alone to make the 10.2x gap, White women would have to report under 10% of assaults even if Black women reported all of them. Unreported assaults stay invisible here.
 - Neighborhood: Black women's tracts record 2.8x White women's rate of assaults with a dangerous weapon per resident; that predicts a 2.8x aggravated assault gap against the 14.4x observed, leaving about 5.2x.
+- Protection: mixed against White women and mixed against Hispanic women by the pre-set rule; like with like, 0.9x (95% CI 0.85 to 0.96) White women's arrest rate and 0.86x (95% CI 0.81 to 0.9) Hispanic women's; partner assaults 44.1% against 59.2% (White) and 57.3% (Hispanic); strangers 1.05x and 1.09x.
 
 Replication: Hispanic 3.31x then 3.14x; White 10.12x then 10.3x; Asian 9.22x then 11.24x.
 
@@ -61,6 +62,7 @@ Caveats:
 
 - **Source.** The FBI's NIBRS files for the District of Columbia, one download per year, each a set of linked tables. `scripts/flatten_nibrs.py` joins them into one row per victim per offense. LA used the LAPD's own portal.
 - **No location.** NIBRS records no address, ward or police district. The victim-level location test and the tract-level model from LA cannot run here. Instead, a neighborhood section places MPD's public incident locations (which carry no victim race) in census tracts and compares the places where women of each group live. It describes places, not victims.
+- **Protection test.** Are assaults on Black women cleared by arrest as often as other women's? Written down before it ran (`docs/clearance-test-plan.md`) and compared like with like by relationship and assault type, because DC law requires an arrest in domestic and family cases when there is probable cause.
 - **Severity as a reporting check.** If the gap came from more reporting, it would narrow for the crimes reported most often (serious injuries, guns, homicide). The page tests that, with national survey reporting rates as context.
 - **Race and ethnicity are separate fields.** A victim is Hispanic if the ethnicity field says so, whatever the race, and otherwise takes the recorded race. That matches the ACS tables used as denominators. Ethnicity is often missing, so the Hispanic and White comparisons carry a range (see the caveats).
 - **Intimate partner comes from the relationship field**, not from separate offense codes as in LA.
@@ -90,8 +92,9 @@ python scripts/replication_counts.py analysis.json   # -> out/replication_counts
 python $KIT/replicate.py analysis.json               # -> out/replication.json
 python scripts/severity.py analysis.json             # -> out/severity.json
 python scripts/neighborhood.py analysis.json         # -> out/neighborhood.json (needs data/external/mpd_violent_incidents.csv)
+python scripts/clearance.py analysis.json            # -> out/clearance.json (the test in docs/clearance-test-plan.md)
 python scripts/dc_checks.py analysis.json            # -> out/dc_checks.json, extra_caveats in analysis.json
-python scripts/page_extras.py analysis.json          # -> out/extra_sections.json (severity, reporting, neighborhood)
+python scripts/page_extras.py analysis.json          # -> out/extra_sections.json (severity, reporting, neighborhood, protection)
 python $KIT/build_page.py analysis.json              # -> index.html, results block above
 python $KIT/bias_scan.py analysis.json               # -> out/bias_review.md
 ```
@@ -101,6 +104,7 @@ python $KIT/bias_scan.py analysis.json               # -> out/bias_review.md
 - `data/raw/DC-2022.zip` to `DC-2025.zip`: the FBI NIBRS state files for DC, as received. Each zip has a README describing its tables.
 - `data/dc_aggravated_assault.csv`, `data/dc_simple_assault.csv`: one row per victim, the analysis input.
 - `data/external/mpd_violent_incidents.csv`: MPD's public violent incidents with locations, 2022 to 2025, fetched by `scripts/fetch_mpd_incidents.py`. Refetch to update.
+- `docs/clearance-test-plan.md`: the clearance test as written before it was run.
 - `data/external/bjs_ncvs.json`: the national survey figures quoted on the page, with the table each came from.
 - `out/`: the audits, population, results, DC checks, replication and bias review.
 
@@ -110,4 +114,5 @@ python $KIT/bias_scan.py analysis.json               # -> out/bias_review.md
 - US Census Bureau, ACS 2020 to 2024 five-year estimates, via [Census Reporter](https://censusreporter.org/profiles/16000US1150000-washington-dc/).
 - DC Open Data, [MPD Crime Incidents](https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer), 2022 to 2025.
 - BJS, [Criminal Victimization, 2024](https://bjs.ojp.gov/document/cv24.pdf) (NCJ 310547), Tables 3, 4, 5 and 10.
+- [DC Code § 16-1031](https://code.dccouncil.gov/us/dc/council/code/sections/16-1031), arrests in intrafamily offenses.
 - BJS, [Household Poverty and Nonfatal Violent Victimization, 2008-2012](https://bjs.ojp.gov/library/publications/household-poverty-and-nonfatal-violent-victimization-2008-2012) (NCJ 248384).

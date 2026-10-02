@@ -17,15 +17,23 @@ Focus: Black women. This screen finds candidates; read every flag in context bef
 Files: `index.html`, `README.md`
 
 ### index.html
+- **review: Causal claim** (`because`): "Written down before it was run (docs/clearance-test-plan.md). An arrest within 90 days of the incident, from MPD's arrest records in the same NIBRS files, for women victims, compared inside each relationship and assault ..."  
+  The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
+- **review: Causal claim** (`the reason`): "Cases with Black women victims are closed as "victim refused to cooperate" 2.1 times as often as White women's (95% CI 1.54 to 2.87), like with like (6.4% against 1.9% before adjusting). That is the reason police recorde..."  
+  The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
 - **review: Causal claim** (`causes`): "The data says Black women are assaulted at a higher rate. It does not say why. Nothing here measures causes, offenders or circumstances."  
   The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
 - **review: Causal claim** (`because`): "Aggravated (13A) and simple (13B) assault reported by the Metropolitan Police Department, individual victims of any age. Left out: 5,678 Metro Transit Police victims, whose system extends into Maryland and Virginia; 3,06..."  
   The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
+- **review: Offender implication** (`offenders`): "Clearance is not a measure of police effort. It depends on whether the person who did it was still there, whether there was probable cause, the victim's cooperation and the evidence. Nothing here measures offenders."  
+  Victim data says nothing about who offended. Remove, or state that offenders are not in the data.
 - **review: Offender implication** (`offenders`): "The data says Black women are assaulted at a higher rate. It does not say why. Nothing here measures causes, offenders or circumstances."  
   Victim data says nothing about who offended. Remove, or state that offenders are not in the data.
 - **review: Offender implication** (`offender`): "Partner assaults are identified from the victim-offender relationship, which is unknown or blank for 18.2% of Black, 28.0% of Hispanic, 41.8% of White, 42.6% of Asian women victims. Where it is missing more often, the pa..."  
   Victim data says nothing about who offended. Remove, or state that offenders are not in the data.
 - **review: Share-of-people claim** (`43.1% of Black women`): "43.1% of Black women live in tracts where 25% or more of residents are poor, against 6.2% of White women. Citywide, 26.3% of Black women are below the poverty line, against 5.1% of White women, and median household incom..."  
+  Report rates count reports, not people. Do not convert them into shares of a population.
+- **review: Share-of-people claim** (`44.1% of Black women`): "In partner assaults, 44.1% of Black women's cases end in an arrest within 90 days, against 59.2% of White women's and 57.3% of Hispanic women's. Among strangers: 41.1%, 38.4% and 36.7%. Asian women are left out of the ch..."  
   Report rates count reports, not people. Do not convert them into shares of a population.
 - **review: Share-of-people claim** (`1.2% of Black residents`): "1.2% of Black residents are also Hispanic, so they sit in both denominators."  
   Report rates count reports, not people. Do not convert them into shares of a population.
@@ -40,6 +48,8 @@ Files: `index.html`, `README.md`
 - **review: Causal claim** (`causes`): "- This shows what, not why: The data says Black women are assaulted at a higher rate. It does not say why. Nothing here measures causes, offenders or circumstances."  
   The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
 - **review: Causal claim** (`because`): "- What is counted: Aggravated (13A) and simple (13B) assault reported by the Metropolitan Police Department, individual victims of any age. Left out: 5,678 Metro Transit Police victims, whose system extends into Maryland..."  
+  The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
+- **review: Causal claim** (`because`): "- **Protection test.** Are assaults on Black women cleared by arrest as often as other women's? Written down before it ran (`docs/clearance-test-plan.md`) and compared like with like by relationship and assault type, bec..."  
   The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.
 - **review: Causal claim** (`because`): "- Agency: Metropolitan Police Department. Metro Transit Police are left out because their system extends into Maryland and Virginia, and the data cannot say where an assault happened."  
   The data shows rates, not causes. Keep causal words only in sentences that say a cause is not measured.

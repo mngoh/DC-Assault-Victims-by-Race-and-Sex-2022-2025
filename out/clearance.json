@@ -1,0 +1,693 @@
+{
+ "window_days": 90,
+ "victims": {
+  "Black": 26341,
+  "Hispanic": 2110,
+  "White": 2056,
+  "Asian": 289
+ },
+ "unknown_race_left_out": 1098,
+ "relationship_labels": {
+  "partner": "Partner",
+  "family": "Other family",
+  "known": "Known, not family",
+  "stranger": "Stranger",
+  "unknown": "Unknown"
+ },
+ "relationship_order": [
+  "partner",
+  "family",
+  "known",
+  "stranger",
+  "unknown"
+ ],
+ "crude": {
+  "Black": {
+   "arrest90": 38.4,
+   "same_day": 32.5,
+   "later": 5.9,
+   "exceptional": 12.5,
+   "victim_refused": 6.4,
+   "prosecution_declined": 5.7
+  },
+  "Hispanic": {
+   "arrest90": 40.8,
+   "same_day": 35.2,
+   "later": 5.5,
+   "exceptional": 7.4,
+   "victim_refused": 2.8,
+   "prosecution_declined": 4.4
+  },
+  "White": {
+   "arrest90": 33.4,
+   "same_day": 29.2,
+   "later": 4.2,
+   "exceptional": 6.9,
+   "victim_refused": 1.9,
+   "prosecution_declined": 4.6
+  },
+  "Asian": {
+   "arrest90": 34.3,
+   "same_day": 30.4,
+   "later": 3.8,
+   "exceptional": 6.6,
+   "victim_refused": 1.4,
+   "prosecution_declined": 4.5
+  }
+ },
+ "relationship_share": {
+  "Black": {
+   "partner": 32.7,
+   "family": 15.0,
+   "known": 28.8,
+   "stranger": 5.0,
+   "unknown": 18.5
+  },
+  "Hispanic": {
+   "partner": 30.3,
+   "family": 9.4,
+   "known": 20.3,
+   "stranger": 11.9,
+   "unknown": 28.1
+  },
+  "White": {
+   "partner": 22.0,
+   "family": 2.7,
+   "known": 15.5,
+   "stranger": 17.9,
+   "unknown": 41.9
+  },
+  "Asian": {
+   "partner": 17.6,
+   "family": 4.2,
+   "known": 12.1,
+   "stranger": 23.2,
+   "unknown": 42.9
+  }
+ },
+ "by_relationship": {
+  "partner": {
+   "Black": {
+    "n": 8623,
+    "arrest90": 44.1
+   },
+   "Hispanic": {
+    "n": 639,
+    "arrest90": 57.3
+   },
+   "White": {
+    "n": 453,
+    "arrest90": 59.2
+   },
+   "Asian": {
+    "n": 51,
+    "arrest90": 52.9
+   }
+  },
+  "family": {
+   "Black": {
+    "n": 3953,
+    "arrest90": 57.4
+   },
+   "Hispanic": {
+    "n": 198,
+    "arrest90": 66.7
+   },
+   "White": {
+    "n": 56,
+    "arrest90": 71.4
+   },
+   "Asian": {
+    "n": 12,
+    "arrest90": 91.7
+   }
+  },
+  "known": {
+   "Black": {
+    "n": 7587,
+    "arrest90": 36.4
+   },
+   "Hispanic": {
+    "n": 429,
+    "arrest90": 41.3
+   },
+   "White": {
+    "n": 319,
+    "arrest90": 35.4
+   },
+   "Asian": {
+    "n": 35,
+    "arrest90": 45.7
+   }
+  },
+  "stranger": {
+   "Black": {
+    "n": 1304,
+    "arrest90": 41.1
+   },
+   "Hispanic": {
+    "n": 251,
+    "arrest90": 36.7
+   },
+   "White": {
+    "n": 367,
+    "arrest90": 38.4
+   },
+   "Asian": {
+    "n": 67,
+    "arrest90": 38.8
+   }
+  },
+  "unknown": {
+   "Black": {
+    "n": 4874,
+    "arrest90": 15.2
+   },
+   "Hispanic": {
+    "n": 593,
+    "arrest90": 15.7
+   },
+   "White": {
+    "n": 861,
+    "arrest90": 14.4
+   },
+   "Asian": {
+    "n": 124,
+    "arrest90": 15.3
+   }
+  }
+ },
+ "comparisons": {
+  "Hispanic": {
+   "pooled": {
+    "rr": 0.86,
+    "ci": [
+     0.81,
+     0.9
+    ],
+    "strata": 10
+   },
+   "regression": {
+    "rr": 0.85,
+    "ci": [
+     0.8,
+     0.89
+    ]
+   },
+   "by_relationship": {
+    "partner": {
+     "rr": 0.77,
+     "ci": [
+      0.72,
+      0.83
+     ],
+     "strata": 2
+    },
+    "family": {
+     "rr": 0.86,
+     "ci": [
+      0.78,
+      0.95
+     ],
+     "strata": 2
+    },
+    "known": {
+     "rr": 0.87,
+     "ci": [
+      0.77,
+      0.97
+     ],
+     "strata": 2
+    },
+    "stranger": {
+     "rr": 1.09,
+     "ci": [
+      0.92,
+      1.3
+     ],
+     "strata": 2
+    },
+    "unknown": {
+     "rr": 0.97,
+     "ci": [
+      0.79,
+      1.18
+     ],
+     "strata": 2
+    }
+   },
+   "checks": {
+    "halves": {
+     "2022 to 2023": {
+      "rr": 0.82,
+      "ci": [
+       0.76,
+       0.88
+      ],
+      "strata": 10
+     },
+     "2024 to 2025": {
+      "rr": 0.89,
+      "ci": [
+       0.83,
+       0.96
+      ],
+      "strata": 10
+     }
+    },
+    "single_victim": {
+     "rr": 0.84,
+     "ci": [
+      0.8,
+      0.89
+     ],
+     "strata": 10
+    },
+    "partner_halves": {
+     "2022 to 2023": {
+      "rr": 0.71,
+      "ci": [
+       0.65,
+       0.79
+      ],
+      "strata": 2
+     },
+     "2024 to 2025": {
+      "rr": 0.83,
+      "ci": [
+       0.75,
+       0.92
+      ],
+      "strata": 2
+     }
+    },
+    "partner_same_day": {
+     "rr": 0.74,
+     "ci": [
+      0.68,
+      0.8
+     ],
+     "strata": 2
+    },
+    "partner_later": {
+     "rr": 0.99,
+     "ci": [
+      0.73,
+      1.34
+     ],
+     "strata": 2
+    },
+    "same_day": {
+     "rr": 0.85,
+     "ci": [
+      0.8,
+      0.9
+     ],
+     "strata": 10
+    },
+    "later": {
+     "rr": 0.93,
+     "ci": [
+      0.77,
+      1.11
+     ],
+     "strata": 10
+    }
+   },
+   "secondary": {
+    "exceptional": {
+     "rr": 1.49,
+     "ci": [
+      1.28,
+      1.74
+     ],
+     "strata": 10
+    },
+    "victim_refused": {
+     "rr": 1.9,
+     "ci": [
+      1.48,
+      2.45
+     ],
+     "strata": 10
+    },
+    "prosecution_declined": {
+     "rr": 1.25,
+     "ci": [
+      1.02,
+      1.53
+     ],
+     "strata": 10
+    }
+   },
+   "decision": "mixed"
+  },
+  "White": {
+   "pooled": {
+    "rr": 0.9,
+    "ci": [
+     0.85,
+     0.96
+    ],
+    "strata": 10
+   },
+   "regression": {
+    "rr": 0.91,
+    "ci": [
+     0.85,
+     0.96
+    ]
+   },
+   "by_relationship": {
+    "partner": {
+     "rr": 0.74,
+     "ci": [
+      0.69,
+      0.81
+     ],
+     "strata": 2
+    },
+    "family": {
+     "rr": 0.8,
+     "ci": [
+      0.68,
+      0.95
+     ],
+     "strata": 2
+    },
+    "known": {
+     "rr": 1.01,
+     "ci": [
+      0.87,
+      1.18
+     ],
+     "strata": 2
+    },
+    "stranger": {
+     "rr": 1.05,
+     "ci": [
+      0.91,
+      1.21
+     ],
+     "strata": 2
+    },
+    "unknown": {
+     "rr": 1.04,
+     "ci": [
+      0.87,
+      1.24
+     ],
+     "strata": 2
+    }
+   },
+   "checks": {
+    "halves": {
+     "2022 to 2023": {
+      "rr": 0.88,
+      "ci": [
+       0.81,
+       0.96
+      ],
+      "strata": 9
+     },
+     "2024 to 2025": {
+      "rr": 0.92,
+      "ci": [
+       0.84,
+       0.99
+      ],
+      "strata": 10
+     }
+    },
+    "single_victim": {
+     "rr": 0.9,
+     "ci": [
+      0.84,
+      0.96
+     ],
+     "strata": 10
+    },
+    "partner_halves": {
+     "2022 to 2023": {
+      "rr": 0.76,
+      "ci": [
+       0.67,
+       0.86
+      ],
+      "strata": 2
+     },
+     "2024 to 2025": {
+      "rr": 0.73,
+      "ci": [
+       0.66,
+       0.81
+      ],
+      "strata": 2
+     }
+    },
+    "partner_same_day": {
+     "rr": 0.74,
+     "ci": [
+      0.67,
+      0.81
+     ],
+     "strata": 2
+    },
+    "partner_later": {
+     "rr": 0.76,
+     "ci": [
+      0.56,
+      1.05
+     ],
+     "strata": 2
+    },
+    "same_day": {
+     "rr": 0.88,
+     "ci": [
+      0.82,
+      0.94
+     ],
+     "strata": 10
+    },
+    "later": {
+     "rr": 1.06,
+     "ci": [
+      0.86,
+      1.31
+     ],
+     "strata": 10
+    }
+   },
+   "secondary": {
+    "exceptional": {
+     "rr": 1.35,
+     "ci": [
+      1.15,
+      1.59
+     ],
+     "strata": 10
+    },
+    "victim_refused": {
+     "rr": 2.1,
+     "ci": [
+      1.54,
+      2.87
+     ],
+     "strata": 10
+    },
+    "prosecution_declined": {
+     "rr": 1.11,
+     "ci": [
+      0.91,
+      1.36
+     ],
+     "strata": 10
+    }
+   },
+   "decision": "mixed"
+  },
+  "Asian": {
+   "pooled": {
+    "rr": 0.88,
+    "ci": [
+     0.76,
+     1.03
+    ],
+    "strata": 10
+   },
+   "regression": {
+    "rr": 0.88,
+    "ci": [
+     0.76,
+     1.03
+    ]
+   },
+   "by_relationship": {
+    "partner": {
+     "rr": 0.83,
+     "ci": [
+      0.64,
+      1.07
+     ],
+     "strata": 2
+    },
+    "family": {
+     "rr": 0.63,
+     "ci": [
+      0.53,
+      0.74
+     ],
+     "strata": 2
+    },
+    "known": {
+     "rr": 0.79,
+     "ci": [
+      0.55,
+      1.14
+     ],
+     "strata": 2
+    },
+    "stranger": {
+     "rr": 1.04,
+     "ci": [
+      0.76,
+      1.41
+     ],
+     "strata": 2
+    },
+    "unknown": {
+     "rr": 0.98,
+     "ci": [
+      0.65,
+      1.49
+     ],
+     "strata": 2
+    }
+   },
+   "checks": {
+    "halves": {
+     "2022 to 2023": {
+      "rr": 0.9,
+      "ci": [
+       0.72,
+       1.13
+      ],
+      "strata": 8
+     },
+     "2024 to 2025": {
+      "rr": 0.85,
+      "ci": [
+       0.69,
+       1.04
+      ],
+      "strata": 10
+     }
+    },
+    "single_victim": {
+     "rr": 0.9,
+     "ci": [
+      0.75,
+      1.07
+     ],
+     "strata": 9
+    },
+    "partner_halves": {
+     "2022 to 2023": {
+      "rr": 0.87,
+      "ci": [
+       0.57,
+       1.3
+      ],
+      "strata": 1
+     },
+     "2024 to 2025": {
+      "rr": 0.8,
+      "ci": [
+       0.57,
+       1.11
+      ],
+      "strata": 2
+     }
+    },
+    "partner_same_day": {
+     "rr": 0.8,
+     "ci": [
+      0.6,
+      1.07
+     ],
+     "strata": 2
+    },
+    "partner_later": {
+     "rr": 1.04,
+     "ci": [
+      0.35,
+      3.06
+     ],
+     "strata": 2
+    },
+    "same_day": {
+     "rr": 0.85,
+     "ci": [
+      0.72,
+      1.01
+     ],
+     "strata": 10
+    },
+    "later": {
+     "rr": 1.11,
+     "ci": [
+      0.63,
+      1.97
+     ],
+     "strata": 10
+    }
+   },
+   "secondary": {
+    "exceptional": {
+     "rr": 1.37,
+     "ci": [
+      0.89,
+      2.12
+     ],
+     "strata": 10
+    },
+    "victim_refused": {
+     "rr": 2.54,
+     "ci": [
+      0.96,
+      6.71
+     ],
+     "strata": 10
+    },
+    "prosecution_declined": {
+     "rr": 1.19,
+     "ci": [
+      0.7,
+      2.03
+     ],
+     "strata": 10
+    }
+   },
+   "decision": "not asserted (small numbers)"
+  }
+ },
+ "ethnicity_bound": {
+  "moved": 959,
+  "Hispanic": {
+   "rr": 0.87,
+   "ci": [
+    0.83,
+    0.91
+   ],
+   "strata": 10
+  },
+  "White": {
+   "rr": 0.9,
+   "ci": [
+    0.83,
+    0.97
+   ],
+   "strata": 10
+  }
+ }
+}

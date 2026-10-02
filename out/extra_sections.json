@@ -138,6 +138,119 @@
      "text": "The national crime survey, which counts crimes whether or not they were reported, finds similar rates of violence for Black and White people: 23.4 and 22.1 per 1,000 in 2024, both sexes. Poor urban Black and White residents had similar rates too (51.3 and 56.4 per 1,000, 2008 to 2012)."
     }
    ]
+  },
+  {
+   "title": "Protection: are cases cleared by arrest equally?",
+   "note": "Written down before it was run (docs/clearance-test-plan.md). An arrest within 90 days of the incident, from MPD's arrest records in the same NIBRS files, for women victims, compared inside each relationship and assault type, because DC law requires an arrest in domestic and family cases when there is probable cause.",
+   "boxes": [
+    {
+     "id": "clearRel",
+     "title": "Arrest within 90 days, by relationship",
+     "text": "In partner assaults, 44.1% of Black women's cases end in an arrest within 90 days, against 59.2% of White women's and 57.3% of Hispanic women's. Among strangers: 41.1%, 38.4% and 36.7%. Asian women are left out of the chart: 289 victims in all.",
+     "labels": [
+      "Partner",
+      "Other family",
+      "Known, not family",
+      "Stranger",
+      "Unknown"
+     ],
+     "datasets": [
+      {
+       "label": "Black women",
+       "data": [
+        44.1,
+        57.4,
+        36.4,
+        41.1,
+        15.2
+       ],
+       "color": "red"
+      },
+      {
+       "label": "Hispanic women",
+       "data": [
+        57.3,
+        66.7,
+        41.3,
+        36.7,
+        15.7
+       ],
+       "color": "blue"
+      },
+      {
+       "label": "White women",
+       "data": [
+        59.2,
+        71.4,
+        35.4,
+        38.4,
+        14.4
+       ],
+       "color": "blueLight"
+      }
+     ],
+     "ytitle": "% arrested within 90 days"
+    },
+    {
+     "id": "clearRR",
+     "title": "Compared like with like",
+     "text": "Black women's arrest rate as a multiple of each group's, inside each relationship (below 1 means less often). All relationships together, compared like with like: 0.9x (95% CI 0.85 to 0.96) against White women, 0.86x (95% CI 0.81 to 0.9) against Hispanic women.",
+     "labels": [
+      "Partner",
+      "Other family",
+      "Known, not family",
+      "Stranger",
+      "Unknown",
+      "All, like with like"
+     ],
+     "datasets": [
+      {
+       "label": "vs Hispanic women",
+       "data": [
+        0.77,
+        0.86,
+        0.87,
+        1.09,
+        0.97,
+        0.86
+       ],
+       "color": "blue"
+      },
+      {
+       "label": "vs White women",
+       "data": [
+        0.74,
+        0.8,
+        1.01,
+        1.05,
+        1.04,
+        0.9
+       ],
+       "color": "blueLight"
+      }
+     ],
+     "ytitle": "Rate ratio"
+    }
+   ],
+   "findings": [
+    {
+     "title": "What the test says",
+     "text": "Both comparisons are mixed by the rule written before the test. Compared like with like, Black women's cases end in an arrest 0.9 times as often as White women's (95% CI 0.85 to 0.96) and 0.86 times as often as Hispanic women's (95% CI 0.81 to 0.9). The gap sits in partner and other family assaults: in partner assaults, 0.74 times as often as White women's (95% CI 0.69 to 0.81). There is no clear difference for stranger or unknown relationships. It holds in both halves of the window. Against White women it sits in same-day arrests (0.88x), not later ones (1.06x).",
+     "red": true
+    },
+    {
+     "title": "Why the raw rates mislead",
+     "text": "Before comparing like with like, Black women's cases look more likely to end in an arrest (38.4% against 33.4% for White women). More of them are partner assaults (32.7% against 22.0%), where DC Code 16-1031 requires an arrest when there is probable cause, and fewer have an unknown relationship (18.5% against 41.9%), where arrests are rare."
+    },
+    {
+     "title": "How cases close without an arrest",
+     "text": "Cases with Black women victims are closed as \"victim refused to cooperate\" 2.1 times as often as White women's (95% CI 1.54 to 2.87), like with like (6.4% against 1.9% before adjusting). That is the reason police recorded. It cannot separate a victim's choice, or her safety, from how the case was handled."
+    },
+    {
+     "title": "What it cannot say",
+     "text": "Clearance is not a measure of police effort. It depends on whether the person who did it was still there, whether there was probable cause, the victim's cooperation and the evidence. Nothing here measures offenders."
+    }
+   ]
   }
  ],
  "readme": [
@@ -152,6 +265,10 @@
   [
    "Neighborhood",
    "Black women's tracts record 2.8x White women's rate of assaults with a dangerous weapon per resident; that predicts a 2.8x aggravated assault gap against the 14.4x observed, leaving about 5.2x"
+  ],
+  [
+   "Protection",
+   "mixed against White women and mixed against Hispanic women by the pre-set rule; like with like, 0.9x (95% CI 0.85 to 0.96) White women's arrest rate and 0.86x (95% CI 0.81 to 0.9) Hispanic women's; partner assaults 44.1% against 59.2% (White) and 57.3% (Hispanic); strangers 1.05x and 1.09x"
   ]
  ]
 }

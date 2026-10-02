@@ -114,7 +114,8 @@
     "US Census Bureau ACS 2020 to 2024 five-year estimates via Census Reporter",
     "DC Open Data, MPD Crime Incidents 2022 to 2025 (locations, no victim race)",
     "BJS, Criminal Victimization, 2024 (NCJ 310547)",
-    "BJS, Household Poverty and Nonfatal Violent Victimization, 2008-2012 (NCJ 248384)"
+    "BJS, Household Poverty and Nonfatal Violent Victimization, 2008-2012 (NCJ 248384)",
+    "DC Code 16-1031, arrests in intrafamily offenses (code.dccouncil.gov)"
   ],
   "links": {
     "code": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025",
