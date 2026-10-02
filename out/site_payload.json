@@ -3,7 +3,7 @@
  "generated": "2026-10-02",
  "source": {
   "repo": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025",
-  "commit": "178c365",
+  "commit": "d4232ed",
   "report": "https://mngoh.github.io/DC-Assault-Victims-by-Race-and-Sex-2022-2025/",
   "test_plan": "https://github.com/mngoh/DC-Assault-Victims-by-Race-and-Sex-2022-2025/blob/main/docs/clearance-test-plan.md"
  },
@@ -98,6 +98,11 @@
    ]
   },
   "least_stable": "Asian",
+  "nonresident_excluded_ratios": {
+   "Hispanic": 3.58,
+   "White": 11.56,
+   "Asian": 12.2
+  },
   "severity": [
    {
     "label": "Simple assault, no serious injury",
