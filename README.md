@@ -1,6 +1,6 @@
 # Assault victims in Washington, DC
 
-Who gets assaulted in Washington, DC, as rates rather than counts: victims of aggravated and simple assault reported by the Metropolitan Police Department, 2022 to 2025, by race and sex, against ACS population. It is the DC companion to the Los Angeles analysis ([LA-Crime](https://github.com/mngoh/LA-Crime)) and uses the same method, packaged as [disparity-kit](https://github.com/mngoh/disparity-kit).
+Who gets assaulted in Washington, DC, as rates rather than counts: victims of aggravated and simple assault reported by the Metropolitan Police Department, 2022 to 2025, by race and sex, against ACS population. It is the DC companion to the Los Angeles analysis ([Los-Angeles-CA-Assault-Victim-Rates-by-Race-and-Sex-2020-2023](https://github.com/mngoh/Los-Angeles-CA-Assault-Victim-Rates-by-Race-and-Sex-2020-2023)) and uses the same method, packaged as [disparity-kit](https://github.com/mngoh/disparity-kit).
 
 The full page is `index.html`.
 
