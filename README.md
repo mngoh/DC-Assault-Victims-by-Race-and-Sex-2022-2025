@@ -9,7 +9,7 @@ The full page is `index.html`.
 Every number below is generated from `out/results.json`, `out/dc_checks.json` and `out/replication.json`.
 
 <!-- results:start -->
-**Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and about 10 times the rate of White women. The gap is widest for the most serious assaults, and neighborhood accounts for part of it.**
+**Black women's reported assault rate in DC is 2 to 3 times Hispanic women's and about 10 times White women's. The gap is widest for the most serious assaults, and neighborhood accounts for part of it.**
 
 Rates per 100,000 residents a year, 2022-01-01 to 2025-12-31:
 
@@ -38,7 +38,7 @@ Replication: Hispanic 3.31x then 3.14x; White 10.12x then 10.3x; Asian 9.22x the
 
 Caveats:
 
-- This shows what, not why: The data says Black women are assaulted at a higher rate. It does not say why. Nothing here measures causes, offenders or circumstances.
+- This shows what, not why: The data says the reported assault rate for Black women is higher. It does not say why. Nothing here measures causes, offenders or circumstances.
 - Reported crimes only: Every number is a report that reached the police. Willingness to report, and recording practice, differ by group, area and time.
 - Reports, not people: Rates count reports. Someone assaulted twice counts twice, so a rate is not the share of people assaulted.
 - Exposure is not population: Rates divide by where people live, not where they spend time.

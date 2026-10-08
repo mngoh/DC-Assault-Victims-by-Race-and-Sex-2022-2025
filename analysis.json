@@ -57,8 +57,8 @@
     "sex": "F",
     "label": "Black women"
   },
-  "headline": "Black women in DC are assaulted at 2 to 3 times the rate of Hispanic women and about 10 times the rate of White women. The gap is widest for the most serious assaults, and neighborhood accounts for part of it.",
-  "question": "Are Black women in DC assaulted at a higher rate than Hispanic, White and Asian women, and do the plain explanations account for it?",
+  "headline": "Black women's reported assault rate in DC is 2 to 3 times Hispanic women's and about 10 times White women's. The gap is widest for the most serious assaults, and neighborhood accounts for part of it.",
+  "question": "Is Black women's reported assault rate in DC higher than Hispanic, White and Asian women's, and do the plain explanations account for it?",
   "flags": {
     "partner": {
       "column": "partner",
